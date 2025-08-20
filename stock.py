@@ -15,7 +15,7 @@ with col1:
 with col2:
     st.markdown(
         """
-        <div style="background-color:#f2f2f2; padding:10px; border-radius:10px;">
+        <div style="background-color:#f2f2f2; padding:9px; border-radius:9px;">
             <h1 style="text-align:center; margin:0;">STOCK DASHBOARD</h1>
         </div>
         """,
@@ -96,6 +96,7 @@ if ticker:
 
 
           
+
 
 
 
