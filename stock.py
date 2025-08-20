@@ -15,6 +15,7 @@ with col2:
     st.markdown("<h1 style='text-align: center;'>STOCK DASHBOARD</h1>", unsafe_allow_html=True)
 
 # ------------------- SIDEBAR -------------------
+st.sidebar.title("Stock Options")
 ticker = st.sidebar.text_input('Ticker', 'AAPL')   # Default Apple
 start_date = st.sidebar.date_input('Start_Date')
 end_date = st.sidebar.date_input('End_Date')
@@ -86,5 +87,6 @@ if ticker:
 
 
           
+
 
 
