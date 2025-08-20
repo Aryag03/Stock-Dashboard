@@ -2,6 +2,7 @@
 
 An interactive **Stock Market Dashboard** built with **Streamlit**, **yfinance**, and **Plotly**.  
 The app lets you analyze stock prices, calculate risk/returns, view financial statements, and check the latest stock news with sentiment analysis.
+👉 **[Click here to view the live dashboard!](https://stock-dashboard-03.streamlit.app/)** 
 
 ---
 
