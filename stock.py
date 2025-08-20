@@ -10,14 +10,17 @@ from stocknews import StockNews
 st.markdown(
     """
     <div style="background-color:#f2f2f2; padding:10px; border-radius:10px;">
-        <div style="display:flex; align-items:center;">
-            <img src="stock-market.png" width="80" style="margin-right:15px;">
-            <h1 style="text-align:center; margin:0; flex-grow:1;">STOCK DASHBOARD</h1>
-        </div>
-    </div>
     """,
     unsafe_allow_html=True
 )
+
+col1, col2 = st.columns([1,5])
+with col1:
+    st.image("stock-market.png", width=80)
+with col2:
+    st.markdown("<h1 style='text-align: center;'>STOCK DASHBOARD</h1>", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 # ------------------- SIDEBAR -------------------
 st.sidebar.title("Stock Options")
@@ -92,6 +95,7 @@ if ticker:
 
 
           
+
 
 
 
