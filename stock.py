@@ -7,20 +7,21 @@ import datetime
 from stocknews import StockNews
 
 # ------------------- HEADER -------------------
-st.markdown(
-    """
-    <div style="background-color:#f2f2f2; padding:10px; border-radius:10px;">
-    """,
-    unsafe_allow_html=True
-)
-
 col1, col2 = st.columns([1,5])
+
 with col1:
     st.image("stock-market.png", width=80)
-with col2:
-    st.markdown("<h1 style='text-align: center;'>STOCK DASHBOARD</h1>", unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
+with col2:
+    st.markdown(
+        """
+        <div style="background-color:#f2f2f2; padding:10px; border-radius:10px;">
+            <h1 style="text-align:center; margin:0;">STOCK DASHBOARD</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
 # ------------------- SIDEBAR -------------------
 st.sidebar.title("Stock Options")
@@ -95,6 +96,7 @@ if ticker:
 
 
           
+
 
 
 
